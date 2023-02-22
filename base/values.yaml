@@ -49,7 +49,7 @@ dags:
     env: []
     extraVolumeMounts: []
     maxFailures: 0
-    repo: git@gitlab.ct.mobagel.com:ds/dags.git
+    repo: git@github.com:leobekhuis/dxone.git
     resources: {}
     rev: HEAD
     securityContext: {}
@@ -73,8 +73,8 @@ data:
     protocol: postgresql
     sslmode: disable
     user: airflow
-defaultAirflowRepository: mobagel/airflow
-defaultAirflowTag: 2.3.2c1
+defaultAirflowRepository: lbs75/airflow
+defaultAirflowTag: 2.3.2dx2
 env: []
 executor: CeleryExecutor
 extraConfigMaps: {}
@@ -112,8 +112,8 @@ ingress:
   enabled: true
   flower:
     annotations: {}
-    host: 'airflow-flower.mobagel.com'
-    hosts: ['airflow-flower.mobagel.com']
+    host: 'airflow-flower.dxone.com'
+    hosts: ['airflow-flower.dxone.com']
     ingressClassName: ''
     path: /
     pathType: Prefix
@@ -121,8 +121,8 @@ ingress:
     path: /
     pathType: Prefix
     annotations: {}
-    host: 'airflow.mobagel.com'
-    hosts: ['airflow.mobagel.com']
+    host: 'airflow.dxone.com'
+    hosts: ['airflow.dxone.com']
     ingressClassName: ''
     precedingPaths: []
     succeedingPaths: []
