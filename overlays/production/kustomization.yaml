@@ -9,7 +9,7 @@ patchesStrategicMerge:
     name: airflow-airflow-ingress
   spec:
     rules:
-    - host: airflow-prod-domain.domain.com
+    - host: airflow-prod.dxone.com
       http:
         paths:
         - backend:
@@ -26,7 +26,7 @@ patchesStrategicMerge:
     name: airflow-flower-ingress
   spec:
     rules:
-    - host: airflow-prod-flower-domain.domain.com
+    - host: airflow-prod-flower.dxone.com
       http:
         paths:
         - backend:
