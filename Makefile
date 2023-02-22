@@ -41,7 +41,7 @@ setup:
 	kubectl create -n airflow secret generic airflow-fernet-key \
 		--save-config \
 		--dry-run=client \
-		--from-literal="fernet-key=XiS5LHZQvWJeqWKI_zAPZoAt_3f_mdYmcSCH7vMDyGU=" \
+		--from-literal="fernet-key=sjXIgwMuHAkirIZBVQAkFfqXmb4ztAEyIdbhpu4j1qQ=" \
 		-o yaml | \
 		kubectl apply -n airflow -f -
 	kubectl create -n airflow secret generic airflow-ssh-git-secret \
