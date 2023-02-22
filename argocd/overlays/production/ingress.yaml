@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   rules:
-  - host: argo-prod.your-domain.com
+  - host: argo-prod.dxone.com
     http:
       paths:
       - backend:
