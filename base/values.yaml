@@ -55,7 +55,7 @@ dags:
     securityContext: {}
     subPath: "/dags"
     sshKeySecret: airflow-ssh-git-secret
-    knownHosts: "TODO: use proper knownhost hash here"
+    knownHosts: "TODO: use proper github knownhost hash here"
     uid: 65533
     wait: 30
   persistence:
