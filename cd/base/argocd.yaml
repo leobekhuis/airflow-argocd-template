@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'git@gitlab.ct.mobagel.com:infra/airflow.git'
+    repoURL: 'git@gitlab.dxone.com:infra/airflow.git'
     path: overlays/production
     plugin:
       name: kustomized-helm

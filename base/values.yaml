@@ -1,4 +1,4 @@
-airflowVersion: 2.3.2
+airflowVersion: 2.5.1
 config:
   api:
     auth_backend: airflow.api.auth.backend.basic_auth
@@ -74,7 +74,7 @@ data:
     sslmode: disable
     user: airflow
 defaultAirflowRepository: lbs75/airflow
-defaultAirflowTag: 2.3.2dx2
+defaultAirflowTag: 2.5.1dx4
 env: []
 executor: CeleryExecutor
 extraConfigMaps: {}
