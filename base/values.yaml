@@ -6,8 +6,6 @@ config:
   migrateDatabaseJob:
     useHelmHooks: false
     applyCustomEnv: false
-    jobAnnotations: 
-      "argocd.argoproj.io/hook": Sync
   api:
     auth_backend: airflow.api.auth.backend.basic_auth
   celery:
