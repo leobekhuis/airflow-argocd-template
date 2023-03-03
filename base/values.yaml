@@ -1,5 +1,14 @@
 airflowVersion: 2.5.1
 config:
+  createUserJob:
+    useHelmHooks: false
+    applyCustomEnv: false
+  migrateDatabaseJob:
+    useHelmHooks: false
+    applyCustomEnv: false
+  migrateDatabaseJob:
+    jobAnnotations: 
+      "argocd.argoproj.io/hook": Sync
   api:
     auth_backend: airflow.api.auth.backend.basic_auth
   celery:
